@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Book</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="center" style="padding: 1vw;">
+        <h1>Hi</h1>
+    </div>
+    <div class="center">
+        <h2>This is our Guest Book</h2>
+    </div>
+    <div class="center">
+        <h3>Feel free to write something :)</h3>
+    </div>
+    <form action="" method="post">
+        <div class="center">
+            <textarea  name="textarea" rows="5" cols="45" placeholder="Write something here"></textarea>
+        </div>
+        <div class="center">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    {{root}}
+    <div class="data">
+        {{#each rows}}
+            <p>{{name}}</p>
+        {{/each}}
+    </div>
+
+</body>
+</html>
