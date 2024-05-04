@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 // Replace with your MongoDB connection string
-const mongoURI = 'mongodb://localhost:27017/GuestBook_dev_v1.0';
+// Use "mongodb://127.0.0.1" instead of "localhost"
+const mongoURI = 'mongodb://127.0.0.1:27017/GuestBook_dev_v1_1';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -16,7 +17,8 @@ const port = process.env.PORT || 3000;
 
 async function connectToMongoDB() {
     await mongoose.connect(
-        'mongodb://127.0.0.1:27017/GuestBook_dev_v1_1'
+        mongoURI
+        // 'mongodb://127.0.0.1:27017/GuestBook_dev_v1_1'
     ).then(() => {
         console.log('Database connection successful');
     }).catch((err) => {
@@ -36,6 +38,8 @@ const Note = mongoose.model('Note', NoteSchema);
 // Middleware
 app.use(bodyParser.json());
 app.use(express.static('public'));
+// app.set('view engine', 'ejs');
+// app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', async (req, res) => {
     return res.sendFile('./public/index.html', {'root' : __dirname});
