@@ -111,6 +111,9 @@ app.post('/notes', async (req, res) => {
       return savedNote;
     }).then((message) => {
       return res.status(200).json(message);
+    }).catch(function(err) {
+      console.error(err);
+      res.status(500).json({ message: 'Server Error' });
     });
   } catch (err) {
     console.error(err);
