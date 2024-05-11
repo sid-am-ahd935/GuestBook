@@ -9,3 +9,6 @@
 
 ## Using Enviroment Variables in CMD of Dockerfile
 - Docker does not involve any shell while executing the commands declared in CMD, for including the shell, use exec and remove the array
+
+## To use a variable in Dockerfile, use ARG
+- many uses, checkout out docs
