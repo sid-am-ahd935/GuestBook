@@ -11,6 +11,8 @@ Learn networking and further workings of Docker:
 - https://docs.docker.com/reference/dockerfile/#expose
 - https://docs.docker.com/reference/cli/docker/network/
 - https://docs.docker.com/engine/swarm/secrets/
+- https://stackoverflow.com/questions/68463928/what-is-the-best-way-to-structure-two-docker-containers-that-depend-on-common-co
+- https://www.youtube.com/watch?v=BTXfR76WmCw
 
 # Code
 Removed all unnecessary console.logs from server.js
