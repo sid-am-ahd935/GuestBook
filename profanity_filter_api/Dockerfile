@@ -8,8 +8,6 @@ RUN pip install -r requirements.txt
 
 COPY . /app/filter/
 
-ENV FILER_PORT 5000
+EXPOSE ${FILTER_PORT}
 
-EXPOSE 5000
-
-CMD ["fastapi", "run", "app.py", "--port", "${FILER_PORT}"]
+CMD exec fastapi run app.py --port $FILTER_PORT

@@ -18,3 +18,12 @@ Learn networking and further workings of Docker:
 Removed all unnecessary console.logs from server.js
 Use "mongodb://127.0.0.1" instead of "localhost"
 Use filter_domain = "127.0.0.1" instead of "http://127.0.0.1"
+Use 2 ".env" files in both apps, one for server, and one for api. Store both of them in respective folders.
+For home/.env:
+```bash
+MONGO_URI=[MongoDB_Atlas_Cluster_Address]
+```
+For profanity_filter_api/.env:
+```bash
+GEMINI_API_KEY=[API_KEY_FROM_AI_STUDIO_GOOGLE]
+```

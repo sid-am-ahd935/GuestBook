@@ -1,0 +1,26 @@
+
+version: "3.3"
+services:
+  web:
+    environment:
+      - SERVER_PORT=8000
+      - FILTER_PORT=5000
+      - FILTER_DOMAIN=API
+    build:
+      context: home/
+    ports:
+      - "8000:8000"
+    networks:
+      - local
+    depends_on:
+      - api
+  api:
+    environment:
+      - FILTER_PORT=5000
+    build:
+      context: profanity_filter_api/
+    networks:
+      - local
+networks:
+  local:
+    driver: bridge
