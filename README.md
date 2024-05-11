@@ -4,6 +4,13 @@ This app is a profanity filter using API provided by Gemini https://aistudio.goo
 
 ## TODO
 Add "your learning" into this README.md and try to make this README.md beautiful to make it representative enough
+Learn networking and further workings of Docker:
+- https://stackoverflow.com/questions/35548843/does-ports-on-docker-compose-yml-have-the-same-effect-as-expose-on-dockerfile
+- https://stackoverflow.com/questions/35414479/containerized-node-server-inaccessible-with-server-listenport-127-0-0-1/35414537#35414537
+- https://docs.docker.com/network/
+- https://docs.docker.com/reference/dockerfile/#expose
+- https://docs.docker.com/reference/cli/docker/network/
+- https://docs.docker.com/engine/swarm/secrets/
 
 # Code
 Removed all unnecessary console.logs from server.js
