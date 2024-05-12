@@ -2,6 +2,10 @@
 Shhh! There's a kid here...
 This app is a profanity filter using API provided by Gemini https://aistudio.google.com/app/prompts/new_data
 
+## Gareebi Alert
+This is not the published GuestBook as it contains docker-compose which is not currently supported by free hosting services, so here I am posting the link of the repo which contains the GuestBook which was hosted:
+
+
 ## TODO
 Add "your learning" into this README.md and try to make this README.md beautiful to make it representative enough
 Learn networking and further workings of Docker:
